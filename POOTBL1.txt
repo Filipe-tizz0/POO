@@ -1,0 +1,30 @@
+1° - Tipos primitivos: responsável por armazenar valores de variavél diretamente na memória.
+Em caso da atribuição de uma variável para outra, o valor será copiado, mas cajo tenha
+modificação no valor de uma variavél, o valor da outra permanecerá.
+
+  Tipos de referência: Como o nome sugere, eles fazem uma referência a um local na
+memória, nesse caso, se uma variável é atribuída a outra, a referência será compartilhada
+entre si. Caso haja alguma alteração no valor de referencia, o valor das outras também
+serão modificados.
+
+3° - Saída será 99;
+
+Dupla - 
+5° - Saída: True, True, True, False, False;
+
+  1. s1 == s2 retorna true pois as variáveis contém valores iguais, mesmo que sejam 
+referências diferentes na memória.
+  2. object.ReferenceEquals(s1, s3) pode reotnar falso porque a referência armazenada 
+na memória pode não ser a mesma.
+
+6° - Saída: 100;
+
+  1. numeros1[0] foi alterado porque numeros2[0] recebe a mesma posiçõ de memória como
+referência, ou seja, quando numeros2[0] recebe 100, numeros1[0] também muda;
+  2.Para evitar essa alteração será aconselhado não realizar a atribuição de 
+numeros1[] com numeros2[];
+
+int[] numeros1 = {1, 2, 3};
+    int[] numeros2 = {1, 2, 3};
+    numeros2[0] = 100;
+    Console.WriteLine(numeros2[0]);
