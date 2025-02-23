@@ -60,10 +60,11 @@ class Program {
     
     //Dupla 4° 
     Console.WriteLine("Digite um número:");
-    try{
-      int numero = int.Parse(Console.ReadLine());
+    string str_num = Console.ReadLine();
+    
+    if (int.TryParse(str_num, out int numero)) {
       Console.WriteLine($"Sucesso. Número digitado: {numero}");
-    }catch{
+    }else{
       Console.WriteLine("Valor digitado inválido");
     }
 
