@@ -68,19 +68,5 @@ class Program {
       Console.WriteLine("Valor digitado inválido");
     }
 
-    //Dupla 5° 
-    string s1 = "Olá";
-    string s2 = "Olá";
-    string s3 = new string("Olá");
-    Console.WriteLine(s1 == s2);
-    Console.WriteLine(s1 == s3);
-    Console.WriteLine(object.ReferenceEquals(s1, s2));
-    Console.WriteLine(object.ReferenceEquals(s1, s3));
-
-    //Dupla 6°
-    int[] numeros1 = {1, 2, 3};
-    int[] numeros2 = {1, 2, 3};
-    numeros2[0] = 100;
-    Console.WriteLine(numeros2[0]);
   }
 }
