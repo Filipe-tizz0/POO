@@ -1,11 +1,11 @@
 abstract class Funcionario
 {
-    public double salario
+    public decimal salario
     {
         get; set;
     }
-    public double CalcularSalario()
+    public decimal CalcularSalario()
     {
-        return salario;
+        return salario *= 10;
     }
 }
